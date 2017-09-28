@@ -60,6 +60,18 @@
         </section>
         <button class="submit-button" type="button">Заказать</button>
       </article>
+      <div class="pop-up visually-hidden">
+        <h3 class="pop-up__title">Добавить в корзину</h3>
+        <p class="pop-up__text">Выберите размер</p>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <div class="pop-up__wrapper">
+            <input class="pop-up__radio-size pop-up__radio-size--small" type="radio" name="size" value="small" checked>
+            <input class="pop-up__radio-size pop-up__radio-size--medium" type="radio" name="size" value="medium">
+            <input class="pop-up__radio-size pop-up__radio-size--large" type="radio" name="size" value="large">
+          </div>
+          <button class="pop-up__submit" type="submit">Добавить</button>
+        </form>
+      </div>
       <section class="about-us">
         <h2 class="about-us__title section-title">Коротко о нас:</h2>
         <ul class="about-us__list">
@@ -110,8 +122,8 @@
         <a class="social__btn text-hidden" href="#">Twitter</a>
       </div>
       <div class="copyright">
-        <span class="copyright__text"></span>
-        <a class="copyright__link" href="#">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text"></span>
           <img class="copyright__img" src="http://placehold.it/150x100" alt="Лого HTML academy">
         </a>
       </div>
