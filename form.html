@@ -7,19 +7,19 @@
 <body>
 <header class="page-header">
   <a class="page-header__logo">
-    <img class="page-header__logo-img" src="http://placehold.it/150x100">
+    <img class="page-header__logo-img" src="http://placehold.it/150x100" alt="Лого">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle text-hidden" type="button">Открыть меню</button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
-        <a class="site-list__link" href="#">Каталог товаров</a>
+        <a class="site-list__link" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="site-list__item">
-        <a class="site-list__link" href="#">Вязание на заказ</a>
+        <a class="site-list__link site-list__link--active" >Вязание на заказ</a>
       </li>
       <li class="site-list__item">
-        <a class="site-list__link" href="#">Поиск по сайту</a>
+        <a class="site-list__link" href="index.html">Поиск по сайту</a>
       </li>
       <li class="site-list__item">
         <a class="site-list__link" href="#">Корзина: пока пуста</a>
@@ -28,7 +28,85 @@
   </nav>
 </header>
 <main class="page-main">
-
+  <section class="order">
+    <h1 class="order__title">Вязание на заказ</h1>
+    <p class="order__text"></p>
+    <form class="orfer-form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="order-form__group">
+        <legend class="orger-form__legend">Тип</legend>
+        <div class="order-form__wrapper order-form__wrapper--radio">
+          <input class="order-form__radio-btn" id="interier" type="radio" name="type" value="for-house" checked>
+          <label class="order-form__label" for="interier">Аксессуар для интерьера</label>
+        </div>
+        <div class="order-form__wrapper order-form__wrapper--radio">
+          <input class="order-form__radio-btn" id="toy" type="radio" name="type" value="for-kids">
+          <label class="order-form__label" for="toy">Детская игрушка</label>
+        </div>
+      </fieldset>
+      <fieldset class="order-form__group">
+        <legend class="order-form__legend">Цвет</legend>
+        <div class="order-form__wrapper order-form__wrapper--checkbox">
+          <input class="order-form__checkbox" id="white" type="checkbox" name="white-colour" value="ffffff" checked>
+          <label class="order-form__label" for="white">Белый</label>
+        </div>
+        <div class="order-form__wrapper order-form__wrapper--checkbox">
+          <input class="order-form__checkbox" id="grey" type="checkbox" name="grey-colour" value="747b7a" checked>
+          <label class="order-form__label" for="grey">Серый</label>
+        </div>
+        <div class="order-form__wrapper order-form__wrapper--checkbox">
+          <input class="order-form__checkbox" id="tifany" type="checkbox" name="tifany-colour" value="62d1ba">
+          <label class="order-form__label" for="tifany">Тифани</label>
+        </div>
+        <div class="order-form__wrapper order-form__wrapper--checkbox">
+          <input class="order-form__checkbox" id="black" type="checkbox" name="black-colour" value="000000">
+          <label class="order-form__label" for="black">Черный</label>
+        </div>
+        <div class="order-form__wrapper order-form__wrapper--checkbox">
+          <input class="order-form__checkbox" id="pink" type="checkbox" name="pink-colour" value="ec56ce">
+          <label class="order-form__label" for="pink">Розовый</label>
+        </div>
+        <div class="order-form__wrapper order-form__wrapper--checkbox">
+          <input class="order-form__checkbox" id="orange" type="checkbox" name="orange-colour" value="eb6c05">
+          <label class="order-form__label" for="orange">Оранжевый</label>
+        </div>
+      </fieldset>
+      <fieldset class="order-form__group">
+        <legend class="order-form__legend">ФИО</legend>
+        <div class="order-form__wrapper order-form__wrapper--name">
+          <label class="order-form__label" for="fst-name">Имя:</label>
+          <input class="order-form__input order-form__input--name" id="fst-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+        </div>
+        <div class="order-form__wrapper order-form__wrapper--name">
+          <label class="order-form__label" for="snd-name">Фамилия:</label>
+          <input class="order-form__input order-form__input--name" id="snd-name" type="text" name="second-name" placeholder="Укажите фамилию*" required>
+        </div>
+        <div class="order-form__wrapper order-form__wrapper--name">
+          <label class="order-form__label" for="father-name">Отчество:</label>
+          <input class="order-form__input order-form__input--name" id="father-name" type="text" name="fathers-name" placeholder="Отчество, если желаете">
+        </div>
+      </fieldset>
+      <fieldset class="order-form__group">
+        <legend class="order-form__legend">Тел</legend>
+        <div class="order-form__wrapper order-form__wrapper--phone">
+          <input class="order-form__input order-form__input--phone" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
+        </div>
+      </fieldset>
+      <fieldset class="order-form__group">
+        <legend class="order-form__legend">E-mail</legend>
+        <div class="order-form__wrapper order-form__wrapper--email">
+          <input class="order-form__input order-form__input--email" type="email" name="mail" placeholder="Ваш Email*" required>
+        </div>
+      </fieldset>
+      <fieldset class="order-form__group">
+        <legend class="order-form__legend">Доп</legend>
+        <div class="order-form__wrapper order-form__wrapper--textarea">
+          <textarea class="order-form__input order-form__input--textarea" placeholder="Опишите все ваши пожелания по заказу"></textarea>
+        </div>
+      </fieldset>
+      <p class="order-form__notes">*Поля обязательны для заполнения</p>
+      <button class="subtim-button" type="submit">Отравить заказ</button>
+    </form>
+  </section>
 </main>
 <footer class="page-footer">
   <div class="social">
@@ -39,7 +117,7 @@
   <div class="copyright">
     <span class="copyright__text"></span>
     <a class="copyright__link" href="#">
-      <img class="copyright__img" src="http://placehold.it/150x100">
+      <img class="copyright__img" src="http://placehold.it/150x100" alt="Лого HTML academy">
     </a>
   </div>
 </footer>
