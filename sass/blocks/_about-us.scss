@@ -1,0 +1,59 @@
+.about-us {
+  @include page-paddings;
+}
+
+.about-us__title {
+  margin-top: 28px;
+  margin-bottom: 31px;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  @include bold-font;
+}
+
+.about-us__list {
+  @include reser-list-style;
+}
+
+.about-us__item {
+  height: 123px;
+  box-sizing: border-box;
+  padding-top: 55px;
+  padding-bottom: 30px;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  @include bold-font;
+}
+
+.about-us__item--flower {
+  background-image: url("../img/icon-feature-flower.svg");
+  @include background-img(8px, 0px);
+}
+
+.about-us__item--ball {
+  background-image: url("../img/icon-feature-ball.svg");
+  @include background-img(3px, 3px);
+}
+
+.about-us__item--gift {
+  background-image: url("../img/icon-feature-gift.svg");
+  @include background-img(3px, 3px);
+}
+
+.about-us__item--heart {
+  background-image: url("../img/icon-feature-heart.svg");
+  @include background-img(8px, 5px);
+}
+
+.about-us__item--money {
+  background-image: url("../img/icon-feature-money.svg");
+  @include background-img(0px, 2px);
+}
+
+.about-us__item--rocket {
+  background-image: url("../img/icon-feature-rocket.svg");
+  @include background-img(0px, 5px);
+}
+
+

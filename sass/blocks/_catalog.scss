@@ -1,0 +1,16 @@
+.catalog__item {
+  margin-top: 30px;
+}
+
+.catalog__title {
+  @include inside-page-title;
+}
+
+.catalog__wrapper {
+  @include page-paddings;
+}
+
+.catalog__link {
+  display: block;
+  height: 195px;
+}

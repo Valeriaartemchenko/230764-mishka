@@ -3,83 +3,99 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-img" src="http://placehold.it/150x100" alt="Лого">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle text-hidden" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <section class="catalog">
-        <h1 class="catalog__title">Каталог товаров</h1>
-        <div class="catalog__item product">
-          <img  class="product__image" src="http://placehold.it/150x100" alt="Фото зайца">
-          <h3 class="product__title">Зайчик-попрыгайчик</h3>
-          <p class="product__description">Рост 30 см, вес 200 г</p>
-          <div class="product__buy">
-            <p class="product__price">1200 руб.</p>
-            <button class="product__buy-button text-hidden" type="button">Купить</button>
-          </div>
-        </div>
-        <div class="catalog__item product">
-          <img  class="product__image" src="http://placehold.it/150x100" alt="Фото корзины для белья">
-          <h3 class="product__title">Корзинка для белья</h3>
-          <p class="product__description">Диаметр 15 см, высота 10 см</p>
-          <div class="product__buy">
-            <p class="product__price">690 руб.</p>
-            <button class="product__buy-button text-hidden" type="button">Купить</button>
-          </div>
-        </div>
-        <div class="catalog__item product">
-          <img  class="product__image" src="http://placehold.it/150x100" alt="Фото корзины">
-          <h3 class="product__title">Большая корзинка для игрушек</h3>
-          <p class="product__description">Диаметр 30 см, высота 30 см</p>
-          <div class="product__buy">
-            <p class="product__price">1500 руб.</p>
-            <button class="product__buy-button text-hidden" type="button">Купить</button>
-          </div>
-        </div>
-        <div class="catalog__item promo-video">
-          <h3 class="promo-video__title">Процес производства</h3>
-          <div class="promo-video__player">
-            <img class="promo-video__image" src="http://placehold.it/150x100" alt="Превью видео">
-            <button class="promo-video__play-button"></button>
-          </div>
-          <p class="promo-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="submit-button">Сделать заказ</button>
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="social">
-        <a class="social__btn text-hidden" href="#">Instagram</a>
-        <a class="social__btn text-hidden" href="#">Facebook</a>
-        <a class="social__btn text-hidden" href="#">Twitter</a>
-      </div>
-      <div class="copyright">
-        <span class="copyright__text"></span>
-        <a class="copyright__link" href="#">
-          <img class="copyright__img" src="http://placehold.it/150x100" alt="Лого HTML academy">
+    <div class="wrapper">
+      <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Лого">
         </a>
-      </div>
-    </footer>
+        <nav class="main-nav">
+          <button class="main-nav__toggle text-hidden" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-main">
+        <section class="catalog">
+          <h1 class="catalog__title">Каталог товаров</h1>
+          <div class="catalog__wrapper">
+            <div class="catalog__item product">
+              <a class="catalog__link" href="#">
+                <img  class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Фото зайца">
+              </a>
+              <div class="product__description">
+                <a href="#"><h3 class="product__title">Зайчик-попрыгайчик</h3></a>
+                <p class="product__text">Рост 30 см, вес 200 г</p>
+                <div class="product__buy">
+                  <p class="product__price">1200 руб.</p>
+                  <button class="product__buy-button text-hidden" type="button">Купить</button>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__item product">
+              <a class="catalog__link" href="#">
+                <img  class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Фото корзины для белья">
+              </a>
+              <div class="product__description">
+                <a href="#"><h3 class="product__title">Корзинка для белья</h3></a>
+                <p class="product__text">Диаметр 15 см, высота 10 см</p>
+                <div class="product__buy">
+                  <p class="product__price">690 руб.</p>
+                  <button class="product__buy-button text-hidden" type="button">Купить</button>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__item product">
+              <a class="catalog__link" href="#">
+                <img  class="product__image" src="img/photo-toys-mobile@1x.jpg" alt="Фото корзины">
+              </a>
+              <div class="product__description">
+                <a href="#"><h3 class="product__title">Большая корзинка для игрушек</h3></a>
+                <p class="product__text">Диаметр 30 см, высота 30 см</p>
+                <div class="product__buy">
+                  <p class="product__price">1500 руб.</p>
+                  <button class="product__buy-button text-hidden" type="button">Купить</button>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__item promo-video">
+              <h3 class="promo-video__title">Процесc производства</h3>
+              <div class="promo-video__player">
+                <button class="promo-video__play-button"></button>
+              </div>
+              <p class="promo-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <button class="promo-video__button submit-button">Сделать заказ</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="social">
+          <a class="social__btn social__btn--instagram" href="#"><span class="sr-only">Instagram</span></a>
+          <a class="social__btn social__btn--facebook" href="#"><span class="sr-only">Facebook</span></a>
+          <a class="social__btn social__btn--twitter" href="#"><span class="sr-only">Twitter</span></a>
+        </div>
+        <div class="copyright">
+          <span class="copyright__text">Разработанно</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__img" src="img/logo-htmlacademy.svg" alt="Лого HTML academy">
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

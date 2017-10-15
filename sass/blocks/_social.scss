@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 82px;
+  padding-top: 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid green;
+}
+
+.social__btn--instagram {
+  background-image: url("../img/icon-insta.svg");
+  @include background-img(50%, 50%);
+}
+
+.social__btn--facebook {
+  background-image: url("../img/icon-fb.svg");
+  @include background-img(50%, 50%);
+}
+
+.social__btn--twitter {
+  background-image: url("../img/icon-twitter.svg");
+  @include background-img(0, 50%);
+}

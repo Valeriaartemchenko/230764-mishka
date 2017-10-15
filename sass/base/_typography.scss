@@ -1,0 +1,46 @@
+.text-hidden {
+  //@include text-visually-hidden;
+  font-size: 0;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:("../fonts/opensans.woff2") format "woff2",
+      ("../fonts/opensans.woff") format "woff";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans bold";
+  src:("../fonts/opensansbold.woff2") format "woff2",
+      ("../fonts/opensansbold.woff") format "woff";
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-title {
+  font-size: 25px;
+  line-height: 30px;
+  @include bold-font;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

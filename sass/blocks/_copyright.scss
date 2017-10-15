@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 21px;
+  padding-bottom: 23px;
+}
+
+.copyright__text {
+  display: block;
+  box-sizing: border-box;
+  height: 34px;
+  padding-top: 3px;
+  margin-right: 25px;
+  font-size: 19px;
+  line-height: 19px;
+  letter-spacing: 0.8px;
+  @include bold-font;
+}

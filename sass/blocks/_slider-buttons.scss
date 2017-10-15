@@ -1,0 +1,21 @@
+.slider-buttons {
+  display: flex;
+}
+
+.slider-buttons__btn {
+  width: 130px;
+  height: 51px;
+  box-sizing: border-box;
+  background-color: white;
+  border: $grey-border;
+}
+
+.slider-buttons__btn--prevoius {
+  background-image: url("../img/icon-left-arrow.svg");
+  @include background-img(39px, 11px);
+}
+
+.slider-buttons__btn--next {
+  background-image: url("../img/icon-right-arrow.svg");
+  @include background-img(38px, 11px);
+}
