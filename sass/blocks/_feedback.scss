@@ -1,0 +1,53 @@
+.feedback {
+  position: relative;
+  @include page-paddings;
+  padding-bottom: 52px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 7px;
+    background: url("../img/zigzag-line.png") repeat-x;
+    background-position: -2px 0;
+    background-size: 16px;
+  }
+}
+
+.feedback__title {
+  margin-top: 27px;
+  margin-bottom: 23px;
+}
+
+.feedback__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.feedback__author {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 18px;
+  @include bold-font;
+}
+
+.feedback__id {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 18px;
+
+}
+
+.feedback__btn-wrapper {
+  margin-bottom: 38px;
+}
+
+.feedback__button {
+  @include button-styled-link;
+}

@@ -1,0 +1,29 @@
+.main-nav {
+  //position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  display: block;
+  width: 20px;
+  height: 14px;
+  margin-right: 31px;
+
+  border: none;
+  background-color: transparent;;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 6px 0 0 black,
+              0 12px 0 0 black;
+}
+

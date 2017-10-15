@@ -1,0 +1,27 @@
+.site-list {
+  display: none;
+  @include reser-list-style;
+}
+
+.site-list__item {
+  @include page-paddings;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: $grey-border;
+}
+
+.site-list__item--search {
+  background-image: url("../img/icon-search.svg");
+  @include background-img(30px, 30px);
+}
+
+.site-list__item--busket {
+  background-image: url("../img/icon-cart.svg");
+  @include background-img(30px, 30px);
+}
+
+.site-list__link {
+  //@include reset-link-style;
+  margin-left: 46px;
+  @include bold-font;
+}

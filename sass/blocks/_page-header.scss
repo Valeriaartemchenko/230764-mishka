@@ -1,0 +1,18 @@
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  display: block;
+  box-sizing: border-box;
+  height: 80px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  @include page-paddings;
+  border-top: 1px solid $menu-border-color;
+  border-bottom: $grey-border;
+}
+
+.page-header__logo-img {
+  margin-left: 86px;
+}

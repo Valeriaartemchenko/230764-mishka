@@ -1,0 +1,4 @@
+.page-footer {
+  @include page-paddings;
+  background-color: $bg-light-grey;
+}

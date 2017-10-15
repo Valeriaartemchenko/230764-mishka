@@ -1,0 +1,81 @@
+.best-product {
+  position: relative;
+  @include page-paddings;
+  padding-top: 27px;
+  padding-bottom: 42px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 7px;
+    background: url("../img/zigzag-line.png") repeat-x;
+    background-position: -2px 0;
+    background-size: 16px;
+  }
+}
+
+.best-product__title {
+  margin: 0;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+};
+
+.best-product__status {
+  margin: 0;
+  color: $text-green;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.best-product__text {
+  padding-top: 7px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.best-product__list {
+  width: 260px;
+}
+
+.best-product__line {
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: $grey-border;
+}
+
+.best-product__field {
+  width: 98px;
+}
+
+.best-product__image-wrapper {
+  width: 260px;
+  padding-top: 28px;
+}
+
+.best-product__image {
+  width: 260px;
+  height: 315px;
+  background-color: #a0b7c7;
+}
+
+.best-product__price {
+  margin-top: 19px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  @include bold-font;
+}
+
+// стили кнопки кроме ширины определенны в блоке submit-button
+
+.best-product__button {
+  width: 260px;
+}

@@ -1,0 +1,198 @@
+//Стили для шапки формы
+.order__title {
+  @include inside-page-title;
+  margin-bottom: 24px;
+}
+
+.order__text {
+  margin: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+// Стили для груп ввода формы
+.order-form__group {
+  box-sizing: border-box;
+  margin: 0;
+  @include page-paddings;
+  padding-top: 24px;
+  padding-bottom: 10px;
+  border: none;
+}
+
+.order-form__group--colour {
+  padding-bottom: 5px;
+}
+
+.order-form__group--phone {
+  padding-top: 7px;
+}
+
+.order-form__group--email {
+  padding-top: 7px;
+}
+
+//order-form__group--name {}
+
+.order-form__legend {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: $light-green;
+  @include bold-font;
+}
+
+.order-form__legend::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 62px;
+  width: 198px;
+  height: 1px;
+  background-color: $light-green;
+}
+
+.order-form__legend--email::after {
+  width: 178px;
+  left: 82px;
+}
+
+//Стили для подписей полей формы
+.order-form__label {
+  position: relative;
+  font-size: 17px;
+  line-height: 18px;
+  @include bold-font;
+}
+
+//Styles for wrapper
+.order-form__wrapper--checkbox,
+.order-form__wrapper--radio{
+  width: 260px;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-left: 62px;
+  padding-right: 30px;
+}
+
+.order-form__wrapper--radio {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.order-form__wrapper--checkbox {
+  height: 40px;
+  margin-bottom: 21px;
+}
+
+.order-form__wrapper--name {
+  padding-top: 2px;
+}
+
+//Hide of native checkbox and radiobutton elements
+.order-form__checkbox,
+.order-form__radio-btn {
+  display: none;
+}
+
+//Styles for radiobutton
+.order-form__radio-btn + .order-form__label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -62px;
+  width: 39px;
+  height: 39px;
+  box-sizing: border-box;
+  border: 2px solid #444444;
+  border-radius: 50%;
+}
+
+.order-form__radio-btn:checked + .order-form__label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -49px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $light-green;
+}
+
+//Styles for checkbox
+.order-form__checkbox + .order-form__label::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -62px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid #444444;
+}
+
+.order-form__checkbox:checked + .order-form__label::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -53px;
+  width: 23px;
+  height: 25px;
+  background-image: url("../img/icon-tick.svg");
+  @include background-img(-3px, 0px);
+}
+
+//Styles for text input
+.order-form__input {
+  width: 260px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.order-form__input--textarea {
+  height: 140px;
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  resize: none;
+  border: 2px solid black;
+
+}
+
+.order-form__input--phone {
+  background-image: url("../img/icon-phone.svg");
+  @include background-img(226px, 8px);
+}
+
+.order-form__input--email {
+  background-image: url("../img/icon-mail.svg");
+  @include background-img(224px, 10px);
+}
+
+.order__button {
+  width: 260px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 55px;
+  letter-spacing: 0.8px;
+}
+
+.order-form__notes {
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+::-webkit-input-placeholder {color:#cccccc;}
+::-moz-placeholder          {color:#cccccc;}/* Firefox 19+ */
+:-moz-placeholder           {color:#cccccc;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#cccccc;}
