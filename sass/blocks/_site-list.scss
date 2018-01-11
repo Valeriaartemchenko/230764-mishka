@@ -1,5 +1,5 @@
 .site-list {
-  display: none;
+  display: block;
   @include reser-list-style;
 }
 
@@ -24,4 +24,12 @@
   //@include reset-link-style;
   margin-left: 46px;
   @include bold-font;
+}
+
+.site-list__link:hover {
+  color: $linkHover-grey;
+}
+
+.site-list__link:active {
+  color: $linkActive-grey;
 }

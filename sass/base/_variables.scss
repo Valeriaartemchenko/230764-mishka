@@ -1,8 +1,24 @@
+// colors
 $menu-border-color: #ececec;
 $light-green: #63d1bb;
 $dark-green: #56c3b2;
 $text-green: #78d7c4;
 $dark-grey: #444444;
 $bg-light-grey: #f1f1f1;
+$linkHover-grey: #666666;
+$linkActive-grey: #b2b2b2;
+$iconHover-green: #63d1bb;
+$iconActive-green: #d9f4ee;
+$btnHover-grey: #444444;
+
+
+
+//border-styles
 $grey-border: 1px solid $menu-border-color;
+
+//adaptive styles
+$tablet-width: "min-width: 768px";
+$desktop-width: "min-width: 1200px";
+
+
 
